@@ -59,6 +59,8 @@ iorapd.readahead.enable=true
 
 # Media
 audio.offload.video=true
+debug.stagefright.omx_default_rank.sw-audio=1
+debug.stagefright.omx_default_rank=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 
