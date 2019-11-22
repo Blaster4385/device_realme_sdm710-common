@@ -7,3 +7,6 @@ r_dir_file(system_app, sysfs_battery_supply)
 
 r_dir_file(system_app, proc_touchpanel);
 #r_dir_file(system_app, vibrator_sysfs);
+
+# Fps Info
+allow system_app sysfs_fps:file rw_file_perms;
