@@ -1313,3 +1313,11 @@ service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-servi
     group system wakelock uhid context_hub input
     capabilities BLOCK_SUSPEND
     rlimit rtprio 10 10
+
+on late-init
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
