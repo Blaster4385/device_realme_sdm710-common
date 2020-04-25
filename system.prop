@@ -23,6 +23,9 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Data modules
 persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
