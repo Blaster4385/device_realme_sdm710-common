@@ -4,7 +4,21 @@ ro.kernel.ebpf.supported=true
 # Bluetooth
 ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
+persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.bt.a2dp.mac_whitelist=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
+persist.bluetooth.disableabsvol=true
+persist.bluetooth.disableinbandringing=false
+persist.bluetooth.specificatcmdsenable=true
+persist.vendor.btstack.enable.splita2dp=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.btsatck.absvolfeature=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.bluetooth.library_name=libbluetooth_qti.so
+qcom.bluetooth.soc=cherokee
+vendor.bluetooth.soc=cherokee
 
 # Camera
 ro.camera.hfr.enable=1
