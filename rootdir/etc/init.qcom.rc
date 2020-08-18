@@ -116,6 +116,10 @@ on init
     chmod 0666 /sys/kernel/oppo_display/aod_light_mode_set
 #endif VENDOR_EDIT
 
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
