@@ -95,6 +95,9 @@ ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
 
+# Set rendering pipeline mode to Vulkan
+debug.hwui.renderer=skiavk
+
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
