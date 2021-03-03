@@ -172,8 +172,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.binary_xml=false
 
-# Usb
+# SoC
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM710
+
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.usb.config.extra=none \
     vendor.usb.dpl.inst.name=dpl \
     vendor.usb.rmnet.func.name=rmnet_bam \
