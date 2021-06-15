@@ -2,5 +2,8 @@
 allow system_app proc_touchpanel:file rw_file_perms;
 allow system_app oppo_debug_prop:file { read open getattr };
 
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply) 
+
 r_dir_file(system_app, proc_touchpanel);
 #r_dir_file(system_app, vibrator_sysfs);
