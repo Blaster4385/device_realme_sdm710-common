@@ -378,7 +378,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml
 
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt
+    bt \
+    perf
 
 # QTI Perf
 PRODUCT_PACKAGES += \
