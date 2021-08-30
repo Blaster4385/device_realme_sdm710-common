@@ -625,19 +625,11 @@ vendor/lib64/libmulawdec.so|8a114d91458cee68b32186afe1a4b6315c0ffcd9
 
 # Media - from LA.UM.9.8.r1-02700-SDM710.0
 system_ext/lib/libmmosal.so|175c890c965a14043777000cd2cfc20264b04810
-system_ext/lib/libmmparser_lite.so|27f2ef75c3582c1c6ba370e819697de7dab92cef
-system_ext/lib/libmmosal.so|175c890c965a14043777000cd2cfc20264b04810
-system_ext/lib64/libmmparser_lite.so|03437c5126ff9e171401654ee8a5d650a82b25d1
-vendor/bin/vppservice|555301b19a86374900159423c88efd7bd9cea2f9
 vendor/etc/init/vppservice.rc|9daea1a00124d65ecb6978936785273edb74a8ed
 vendor/lib64/libOmxVpp.so|d773cc27df9fbd571e96ab103bcb52b2070dbfe3
 vendor/lib64/libmm-color-convertor.so|218c14814a524c3e4331b1aed6807828e22eaec3
 vendor/lib64/libswvdec.so|ae1f55c7094e2a006e28dcfb0f2b9c32634fb849
-vendor/lib64/libvppclient.so|fd099201fd978d9638ee2f7fac79f5aae54209b4
 vendor/lib64/libvpphvx.so|e1cfc643118f32a73d45c78929edc9815705229d
-vendor/lib64/libvpplibrary.so|aed735c3a754b695ed2596cd8ace94f6b7d37565
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so|49bd6d4ad9881c23266f093e2a533a8410953e43
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so|60b902481d0339d292ba1e0f1370470b1f3f68d9
 vendor/lib/libFileMux_proprietary.so|e59edd4604a7c73147118161cab5b7ac6bb16c82
 vendor/lib/libOmxDsdDec.so|5a58c8b54578c6c7520666df4040a422fea67df9
 vendor/lib/libOmxMux_proprietary.so|b771a6f751502e85a0e98bdf5f54b5ccf9b2e5c1
@@ -646,18 +638,26 @@ vendor/lib/libOmxVpp.so|9bd69acccec3f3e0a126e04ccf3f02f746c0e822
 vendor/lib/libdsd2pcm.so|427be2997fcd72e94c33d08b2cf1fde5bf969fd4
 vendor/lib/libmm-color-convertor.so|67b7fa51e3b179531ccb8e502c79a4fbb6af5fa9
 vendor/lib/libswvdec.so|0ebbd44d40c83333e99e47d64509a970a4052859
-vendor/lib/libvppclient.so|b48af3c4ea13e7ef1220ce3e278823e3e01ea8af
 vendor/lib/libvpphvx.so|a3869a611414316250b71be42b69638c31e9a8f9
-vendor/lib/libvpplibrary.so|00a356cc74a8b9b360098a8a291b65d3af9b5523
-vendor/lib/vendor.qti.hardware.vpp@1.1.so|b5ea7f4684be59d96cf0f225a83296cdb3d3344c
-vendor/lib/vendor.qti.hardware.vpp@1.2.so|e233b44a7d2b17cbb2f20ecfbaf1e1519e278aa6
 vendor/lib/libmmosal.so|57185feced72009af2df1b09117702c9fae7182b
 vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
+
+# Media - from Realme X RUI 2.0
+system_ext/lib/libmmparser_lite.so|554b4e09e20937311cbc773c839f8389746aa861
+system_ext/lib64/libmmparser_lite.so|3cc8448b7de854644a0f90ef79991758dd3dbc6e
+vendor/bin/vppservice|eb1d668979c9e3dd487ac6131b5a36f70ba38d54
+vendor/lib64/libvppclient.so|cc660bdaf11ef4f7fc552bd5b87575569f7444f8
+vendor/lib64/libvpplibrary.so|14c6f413dd40112892a5fa24ae408d7c3c92bb8b
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|f7769685d9c0c74f8c8419db028a5d5c3f65a9da
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308e6cf
+vendor/lib/libvppclient.so|83e4d4faeccd281b7fe2d32cf5049ff89a07bd37
+vendor/lib/libvpplibrary.so|57be2e14249272eca9afd709b991c9e2fc22f970
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|8df356bc93951b2072590ff17c5d7af08b4e8299
+vendor/lib/vendor.qti.hardware.vpp@1.2.so|edd5e3b33c51c31c8e9e54912269e893c4e3c730
 
 # Media - codecs - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/lib64/libAlacSwDec.so|bfd2eb75d733c99d7c0b46f3016834f6f3ebcbdc
 vendor/lib64/libApeSwDec.so|96b957bd6d993737483d9d8705229b406d616ec7
-vendor/lib64/libavservices_minijail.so|c1ccd1e8cfb049c4c3dd8ef8b79364da17a41513
 vendor/lib64/libFlacSwDec.so|720f8497fcbc3d98aa8ff333ed55ca575eb08815
 vendor/lib64/libMpeg4SwEncoder.so|1fc7361424c655ed94c1ac9280c4fe33903a65f6
 vendor/lib64/libOmxAacDec.so|a6007c53468f883fccea0e84cec17087ecddad3b
@@ -671,17 +671,12 @@ vendor/lib64/libOmxEvrcDec.so|e4d98d61ad8588956b7f4f937dd720164d584f7e
 vendor/lib64/libOmxG711Dec.so|fc5694a0aec0091bf64fea7bca3515d7059a1236
 vendor/lib64/libOmxQcelp13Dec.so|65952f3680f9865ea601de764037637d6ee8c990
 vendor/lib64/libOmxSwVdec.so|f943053bac4801df2ddee447873c7df692188779
-vendor/lib64/libOmxSwVencMpeg4.so|74a9c6ce43ba1094666ec18602a378b3b68e2d1c
-vendor/lib64/libOmxWmaDec.so|e85da560e764f1e37123e6926047579a3ae9afa4
 vendor/lib64/libOmxAacEnc.so|5a10abb51ecae4e6ba73a4d8f8fc265e9d625c33
 vendor/lib64/libOmxAmrEnc.so|c4e08889803047ee66672c926ad3d89698e5a3d8
 vendor/lib64/libOmxCore.so|5833308a7aa9fede8aea2274715d6362883e5169
 vendor/lib64/libOmxEvrcEnc.so|48bb25aac656408c76e833556a745852890d9b8b
 vendor/lib64/libOmxG711Enc.so|e0bebd794e0edab0e28a9668e8a4fad6b08805a6
 vendor/lib64/libOmxQcelp13Enc.so|87e5673ad9d12b698ebb5e17c7b32e39dcdae697
-vendor/lib64/libOmxVdec.so|52a85afc5b5e8ee869fe4e680cce96c0ef6cd30a
-vendor/lib64/libOmxVenc.so|5f139f961d037e3891f46f23aec1830d2af30f16
-vendor/lib/libavservices_minijail.so|0a8b1be8c48016638a40b72aa458c8b5c2c16575
 vendor/lib/libAlacSwDec.so|e49062c9fd9377e8264bf8f7901394653b9f02dc
 vendor/lib/libApeSwDec.so|f14f08a55b32cc252417e3970b1d2cb296d48fa0
 vendor/lib/libFlacSwDec.so|bba6d4155029b2fd1a3d2dfe9f75f422f0d8a35e
@@ -697,25 +692,33 @@ vendor/lib/libOmxEvrcDec.so|58d55a09798ae13c90829c7ced2e7fee1c61d8b1
 vendor/lib/libOmxG711Dec.so|134597714307883fbd3bc21bdfa0be9bbecd9f14
 vendor/lib/libOmxQcelp13Dec.so|6c55114663ba69f2c2a7e6c69989fc79d67977b3
 vendor/lib/libOmxSwVdec.so|2ec723ca5de33920e516b25558430f470b5b639a
-vendor/lib/libOmxSwVencMpeg4.so|2451be687eebe41230dbe212f08427168a38d3c5
-vendor/lib/libOmxWmaDec.so|62b11bd1f26461e3e5bff4eba67c04b9a5bb74d6
 vendor/lib/libOmxAacEnc.so|be4e02272e0c26c660d291733ac9357292a451ed
 vendor/lib/libOmxAmrEnc.so|2b13adb8a7b969744b001e872fb8314c13d26e12
 vendor/lib/libOmxCore.so|e3f19fcaf9759e1387dc9508238668233d479728
 vendor/lib/libOmxEvrcEnc.so|2e48cdaa7355238988dd80de956313d4216f29e4
 vendor/lib/libOmxG711Enc.so|20d1dd4a2b1b90482e6f40670e17baf58934400a
 vendor/lib/libOmxQcelp13Enc.so|27af93a81418ef3c5594870a3c4593dd4676c70f
-vendor/lib/libOmxVdec.so|adb705d6912bcc25271a84ca9047ba10549b6ca6
-vendor/lib/libOmxVenc.so|8e016bf1fb69e739f2e3de0cc750282a5b16dc71
-system_ext/lib/extractors/libmmparserextractor.so|4a36864e04c4d1003c1f411c62fd8dae68e836b4
-system_ext/lib/libavenhancements.so|e5f071872bff2e257f709cd8bfc466e6e689b0ea
 system_ext/lib/libmmosal.so|175c890c965a14043777000cd2cfc20264b04810
-system_ext/lib/libmmparser_lite.so|27f2ef75c3582c1c6ba370e819697de7dab92cef
-system_ext/lib64/extractors/libmmparserextractor.so|f38d208278c68016b945e626186e7c7c1b357869
-system_ext/lib64/libavenhancements.so|73aa11f9c2749fed1b558861f33abbfbb4b61fa6
 system_ext/lib64/libmmosal.so|378098a961e465b5d14a29f5bc2320e10c88580c
-system_ext/lib64/libmmparser_lite.so|03437c5126ff9e171401654ee8a5d650a82b25d1
 -system_ext/lib/libqct_resampler.so|4186d11e0c418e7366422802635be68e21b9fca6
+
+# Media - codecs - from Realme X RUI 2.0
+vendor/lib64/libavservices_minijail.so|416e76814f87419f00097ca99e3a102ce5379441
+vendor/lib64/libOmxSwVencMpeg4.so|ddc274576a261ade745dabe57d8e819b74739eb6
+vendor/lib64/libOmxWmaDec.so|de866a6db3ef03a303660e86d4c5f03f2df3550d
+vendor/lib64/libOmxVdec.so|f7c2925310648fad19c8b3e4d9e116b9051bba8d
+vendor/lib64/libOmxVenc.so|8ab98bfb01d98f8d20f92c03734e6906b48c9e70
+vendor/lib/libavservices_minijail.so|87d19ac2e48855cb70d27f07bd774bd78dd49aee
+vendor/lib/libOmxSwVencMpeg4.so|proprietary/vendor/lib/libOmxSwVencMpeg4.so
+vendor/lib/libOmxWmaDec.so|2ec99b366dbd4b9e526652561cafdce25fd98dcf
+vendor/lib/libOmxVdec.so|42c6223f10df8bb1dfca29685bcf313e8ff32c5b
+vendor/lib/libOmxVenc.so|3efc412f04a704fcde23eaec956ba690de1891ee
+system_ext/lib/extractors/libmmparserextractor.so|90437b89191e7e6b2fe9dcacd910394863779b09
+system_ext/lib/libavenhancements.so|f07aaf4933ea9f7998c53549bc48620bc39b49de
+system_ext/lib/libmmparser_lite.so|554b4e09e20937311cbc773c839f8389746aa861
+system_ext/lib64/extractors/libmmparserextractor.so|04092b60ad5d855a050b1663b3ed2de9bdb0b88b
+system_ext/lib64/libavenhancements.so|11d9508611749b0c06539202f32afc338b6c2310
+system_ext/lib64/libmmparser_lite.so|3cc8448b7de854644a0f90ef79991758dd3dbc6e
 
 # Neural networks - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|2f4c5509649e72b1085c9eabd92a2b0b32090c0e
