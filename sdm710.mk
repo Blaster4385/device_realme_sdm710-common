@@ -222,7 +222,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0-service \
     libgui_vendor \
     libminijail \
-    libavservices_minijail
+    libavservices_minijail \
+    libdisplayconfig.system.qti \
+    libgralloc.system.qti
 
 # DRM
 PRODUCT_PACKAGES += \
