@@ -152,6 +152,12 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne \
     services-ext
 
+# Codec2
+PRODUCT_PACKAGES += \
+    libcodec2_vndk.vendor \
+    android.hardware.media.c2@1.0.vendor \
+    libcodec2_hidl@1.0.vendor
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.class_late.sh \
