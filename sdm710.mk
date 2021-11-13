@@ -389,6 +389,11 @@ PRODUCT_PACKAGES += \
    libtflite \
    libtextclassifier_hash
 
+# QTI common
+TARGET_BOARD_PLATFORM := sdm710
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
