@@ -429,6 +429,13 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor
 
+# Shims
+PRODUCT_PACKAGES += \
+    lib-imsvt
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/libshim/lib-imsvideocodec.so:$:$(TARGET_COPY_OUT_SYSTEM_EXT)/vendor_overlay/30/lib64/lib-imsvideocodec.so
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
