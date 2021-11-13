@@ -428,7 +428,13 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     qcrilhook
 
-#PRODUCT_BOOT_JARS += \
+PRODUCT_PACKAGES += \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml
+
+PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Tethering
