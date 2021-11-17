@@ -1,5 +1,6 @@
 # Wifi
 type vendor_wifi_prop, property_type;
+type vendor_wifi_version, property_type;
 
 # Oppo props
 type oppo_debug_prop, property_type;
