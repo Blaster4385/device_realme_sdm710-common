@@ -368,6 +368,11 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+# Perf
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service \
@@ -520,5 +525,5 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-#PRODUCT_BOOT_JARS += \
+PRODUCT_BOOT_JARS += \
     WfdCommon
