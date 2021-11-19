@@ -1,0 +1,2 @@
+allow shell hal_perf_hwservice:hwservice_manager { find };
+allow shell hal_perf_default:binder { call transfer };
