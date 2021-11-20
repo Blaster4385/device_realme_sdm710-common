@@ -13,6 +13,7 @@ persist.vendor.fingerprint.             u:object_r:oppo_fingerprint_prop:s0
 oppo.optical.                           u:object_r:oppo_fingerprint_prop:s0
 vendor.fingerprint.optical.             u:object_r:oppo_fingerprint_prop:s0
 oppo.fingerprint.                       u:object_r:oppo_fingerprint_prop:s0
+oppo.fpc.sw.version                     u:object_r:oppo_fingerprint_prop:s0
 
 # GSM prop
 gsm.operator.numeric                    u:object_r:radio_prop:s0
@@ -50,6 +51,7 @@ persist.oppo.                           u:object_r:oppo_debug_prop:s0
 
 # Oppo wlan prop
 persist.oppo.wlan.                      u:object_r:oppo_wlan_prop:s0
+oppo.wifi.				u:object_r:oppo_wlan_prop:s0
 
 # Sensors
 persist.sensor.sardisable  u:object_r:sensors_prop:s0
