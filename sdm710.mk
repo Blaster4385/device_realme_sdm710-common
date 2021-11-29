@@ -199,8 +199,6 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     gralloc.sdm710 \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libqdMetaData.system \
@@ -210,16 +208,8 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm710 \
     memtrack.sdm710 \
     vendor.display.config@1.0.vendor \
-    vendor.display.config@1.1.vendor \
-    vendor.display.config@1.2.vendor \
-    vendor.display.config@1.3.vendor \
-    vendor.display.config@1.4.vendor \
-    vendor.display.config@1.5.vendor \
-    vendor.display.config@1.6.vendor \
-    vendor.display.config@1.7.vendor \
-    vendor.display.config@1.8.vendor \
-    vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
     libdisplayconfig.qti \
     vendor.qti.hardware.display.allocator@1.0-service \
     libgui_vendor \
