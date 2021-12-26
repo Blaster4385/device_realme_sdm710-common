@@ -216,7 +216,8 @@ PRODUCT_PACKAGES += \
     libminijail \
     libavservices_minijail \
     libdisplayconfig.system.qti \
-    libgralloc.system.qti
+    libgralloc.system.qti \
+    vendor.qti.hardware.display.mapper@3.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
