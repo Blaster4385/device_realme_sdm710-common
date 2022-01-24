@@ -51,10 +51,10 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/realme/sdm710
-endif
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
+#TARGET_KERNEL_SOURCE := kernel/realme/sdm710
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 # Platform
@@ -116,6 +116,9 @@ USE_DEVICE_SPECIFIC_GPS := true
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+            vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml \
+            $(COMMON_PATH)/device_framework_matrix.xml
 
 # Input
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 96
@@ -169,7 +172,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+#include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
