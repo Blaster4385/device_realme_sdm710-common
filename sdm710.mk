@@ -321,6 +321,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
 
+# Libdexfile
+PRODUCT_HOST_PACKAGES += \
+    libdexfile
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm710 \
@@ -378,7 +382,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service \
     android.hardware.power.stats@1.0-service.mock \
     android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.qti.hardware.perf@2.0.vendor
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -474,7 +479,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/wfd-commonsys \
     hardware/qcom/display \
     hardware/qcom/media \
-    vendor/qcom/opensource/audio-hal/primary-hal
+    vendor/qcom/opensource/audio-hal/primary-hal \
+    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
+    vendor/qcom/opensource/commonsys/system/bt/conf
 
 # Telephony
 PRODUCT_PACKAGES += \
