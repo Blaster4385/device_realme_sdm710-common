@@ -56,8 +56,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
@@ -168,7 +166,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
     init.qti.fm.sh \
     init.qti.ims.sh \
     init.qti.chg_policy.sh \
@@ -182,7 +179,6 @@ PRODUCT_PACKAGES += \
     init.oppo.vendor.motor.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \
     apex_metadata.rc
@@ -417,7 +413,8 @@ PRODUCT_PACKAGES += \
 TARGET_BOARD_PLATFORM := sdm710
 TARGET_KERNEL_VERSION := 4.9
 TARGET_COMMON_QTI_COMPONENTS := \
-    bt
+    bt \
+    usb
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
