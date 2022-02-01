@@ -1122,7 +1122,7 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Snapdragon Computer Vision Engine - from LA.UM.9.8.r1-02700-SDM710.0
-vendor/lib64/libfastcvopt.so|dcbd38864009f985e98f8eaea10bb2658385995a
+-vendor/lib64/libfastcvopt.so|dcbd38864009f985e98f8eaea10bb2658385995a
 vendor/lib64/libfastcvdsp_stub.so|de764c199026839848cdc803ed5cb2d8a51ad9b9
 vendor/lib64/libscveCommon.so|96bb978daf460dc5e49716f4222604f0739d9e2f
 vendor/lib64/libscveCommon_stub.so|1549ed1252e64a9f1ae3c8d51927bff247a537d2
@@ -1133,7 +1133,7 @@ vendor/lib64/libscveObjectTracker_stub.so|e4e3db0b7674e326e07fa0a49211593cb7bc49
 vendor/lib/rfsa/adsp/libfastcvadsp.so|4a938b68df77b3611b97abaabf30088c1a69b81e
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|5904dd945651bf21a3cda372e77cd8cedfdb3f27
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|378a152d7683e55375ec7a06eabe796c95b90c98
-vendor/lib/libfastcvopt.so|6c2c1c72b99428aa6e76660fe4ccd2bca6517c48
+-vendor/lib/libfastcvopt.so|6c2c1c72b99428aa6e76660fe4ccd2bca6517c48
 vendor/lib/libfastcvdsp_stub.so|6ccfd797a035075db44aaf288a87d1eb041288b7
 vendor/lib/libscveCommon.so|c21799b2fa31d5606a4072ad92054d359d5a6e21
 vendor/lib/libscveCommon_stub.so|8e9857589753a7a0402cdedc36e1275d396b394f
@@ -1145,8 +1145,8 @@ vendor/lib/libscveObjectTracker_stub.so|94f5f8e76146d6d1ddba875f4b2657bc981c7eb8
 # Thermal - from LA.UM.9.8.r1-02700-SDM710.0
 vendor/bin/thermal-engine|75a541bb2e5005f9391c81d11f21748f1eef9deb
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
-vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
-vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
+-vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
+-vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time services - from LA.UM.9.8.r1-02700-SDM710.0
 -vendor/app/TimeService/TimeService.apk|12495431d5cc284822a303a43861c9b3c0c446ac
