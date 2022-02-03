@@ -20,3 +20,5 @@ vendor.oppo.hardware.radio.oppoappradio::IOppoAppRadio          u:object_r:hal_o
 vendor.qti.hardware.slmadapter::ISlmAdapter                                   u:object_r:vendor_hal_slmadapter_hwservice:s0
 
 vendor.qti.hardware.embmssl::IEmbms                                           u:object_r:hal_embmssl_hwservice:s0
+
+vendor.qti.memory.pasrmanager::IPasrManager                                   u:object_r:hal_pasrmanager_memory_hwservice:s0
