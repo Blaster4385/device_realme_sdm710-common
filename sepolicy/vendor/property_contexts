@@ -77,3 +77,6 @@ ro.logdumpd.enabled                  u:object_r:oppo_debug_prop:s0
 # PASR
 vendor.pasr.                             u:object_r:vendor_pasr_prop:s0
 ro.vendor.pasr.                          u:object_r:vendor_pasr_prop:s0
+
+# Qspmhal
+ro.vendor.qspm.enable                    u:object_r:vendor_qspm_prop:s0

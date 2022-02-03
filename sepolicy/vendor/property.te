@@ -17,3 +17,5 @@ type vendor_thermal_prop, property_type;
 type dirac_prop, property_type;
 
 type vendor_pasr_prop, property_type;
+
+type vendor_qspm_prop, property_type;
