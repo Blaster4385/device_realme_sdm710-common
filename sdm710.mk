@@ -399,7 +399,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
-    media \
     perf \
     usb
 
