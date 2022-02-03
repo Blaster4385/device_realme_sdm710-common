@@ -15,3 +15,7 @@ allow qti_init_shell vfat:dir search;
 
 allow qti_init_shell sysfs:file write;
 allow qti_init_shell system_data_file:file getattr;
+allow qti_init_shell sysfs:file { setattr };
+allow qti_init_shell system_data_file:dir { remove_name write };
+get_prop(qti_init_shell, default_prop)
+allow qti_init_shell system_data_file:file { unlink write };

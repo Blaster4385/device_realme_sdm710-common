@@ -19,3 +19,18 @@ allow init sysfs_mmc_host:file { open write };
 allow init update_engine_exec:process { sigkill transition };
 allow init hwservicemanager:binder { call transfer };
 allow init vfat:dir search;
+
+binder_call(init, init)
+binder_call(init, mediaserver)
+binder_call(init, mediaswcodec)
+allow init video_device:chr_file { ioctl open read };
+allow init vndbinder_device:chr_file { ioctl open read write };
+allow init system_data_file:dir { remove_name write };
+get_prop(init, default_prop)
+allow init system_data_file:file { unlink write };
+allow init system_file:file execute_no_trans;
+allow init vendor_file:file execute_no_trans;
+allow init vendor_toolbox_exec:file execute_no_trans;
+allow init vfat:file { open read };
+allow init default_android_hwservice:hwservice_manager { add find };
+allow init hal_codec2_hwservice:hwservice_manager { add find };

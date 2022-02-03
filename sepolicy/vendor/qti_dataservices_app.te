@@ -3,3 +3,5 @@ allowxperm qtidataservices_app self:socket ioctl msm_sock_ipc_ioctls;
 
 allow qtidataservices_app system_data_file:dir search;
 allow qtidataservices_app user_profile_root_file:dir search;
+allow qtidataservices_app hal_perf_hwservice:hwservice_manager find;
+allow qtidataservices_app hal_perf_default:binder call;

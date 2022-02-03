@@ -1,0 +1,2 @@
+binder_call(mediaswcodec, init)
+binder_call(mediaswcodec, mediaswcodec)

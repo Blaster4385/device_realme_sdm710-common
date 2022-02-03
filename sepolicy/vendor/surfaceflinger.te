@@ -1,2 +1,4 @@
 allow surfaceflinger firmware_file:dir { search };
 allow surfaceflinger vfat:dir search;
+allow surfaceflinger surfaceflinger_color_prop:file { getattr open };
+allow surfaceflinger surfaceflinger_display_prop:file { getattr open };

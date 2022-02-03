@@ -24,3 +24,4 @@ allow gmscore_app vendor_camera_prop:file { getattr open };
 dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager find;
 
 dontaudit gmscore_app hal_memtrack_hwservice:binder {call};
+hal_client_domain(gmscore_app, hal_perf)

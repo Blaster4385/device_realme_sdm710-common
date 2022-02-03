@@ -1,0 +1,2 @@
+binder_call(mediaserver, init)
+binder_call(mediaserver, mediaserver)
