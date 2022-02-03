@@ -1,3 +1,4 @@
 allow priv_app unlabeled:dir { search read open getattr search };
 allow priv_app system_data_file:dir { read open };
 allow priv_app proc_version:file { getattr open };
+allow priv_app hal_embmssl_hwservice:hwservice_manager find;
