@@ -15,15 +15,6 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-system
-
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-system
-
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_props.mk
 
@@ -414,6 +405,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
     bt \
+    overlay \
     perf \
     usb
 
@@ -547,6 +539,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
