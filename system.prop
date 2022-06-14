@@ -2,14 +2,9 @@
 ro.kernel.ebpf.supported=true
 
 # Bluetooth
-persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.bt.a2dp.aac_whitelist=false
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.enable.twsplussho=true
-ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.library_name=libbluetooth_qti.so
 ro.bluetooth.wipower=false
 ro.bluetooth.emb_wp_mode=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 
 # Camera
 ro.camera.hfr.enable=1

@@ -97,8 +97,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_oppo_int_codec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_oppo_int_codec.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_skuw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_skuw.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
-    $(LOCAL_PATH)/audio/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     $(LOCAL_PATH)/audio/audio_tuning_mixer_tasha.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tasha.txt \
     $(LOCAL_PATH)/audio/audio_tuning_mixer_tavil.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tavil.txt \
@@ -111,27 +109,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
-    frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
+    frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:/$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
-# Bluetooth
 PRODUCT_PACKAGES += \
-     android.hardware.bluetooth@1.0.vendor \
-     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-     vendor.qti.hardware.bluetooth_audio@2.0 \
-     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-     vendor.qti.hardware.bluetooth_audio@2.1 \
-     android.hardware.bluetooth.audio@2.1 \
-     audio.bluetooth.default \
-     com.dsi.ant@1.0.vendor \
-     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-     libbluetooth_audio_session \
-     libbluetooth_qti \
-     vendor.qti.hardware.btconfigstore@1.0.vendor \
-     vendor.qti.hardware.btconfigstore@2.0.vendor
+     android.hardware.bluetooth@1.0.vendor
 
 # Binder
 PRODUCT_PACKAGES += \
@@ -139,6 +124,15 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhidltransport \
     libhidltransport.vendor
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl:32 \
+    audio.bluetooth.default \
+    BluetoothResCommon \
+    libbthost_if \
+    libldacBT_dec \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -404,7 +398,6 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     av \
-    bt \
     overlay \
     perf \
     usb
@@ -470,8 +463,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/display \
     hardware/qcom/media \
     vendor/qcom/opensource/audio-hal/primary-hal \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf
+    packages/apps/Bluetooth \
+    system/bt/conf
 
 # Telephony
 PRODUCT_PACKAGES += \
